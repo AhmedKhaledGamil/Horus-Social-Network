@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusedByDefault="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/coverPicture"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/cover_picture"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/cpdefault" />
+
+                <Button
+                    android:id="@+id/editProfilePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="changePicture"
+                    android:tag="PP"
+                    android:text="@string/edit"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/profilePicture"
+                    app:layout_constraintEnd_toEndOf="@+id/profilePicture" />
+
+                <Button
+                    android:id="@+id/editCoverPicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="changePicture"
+                    android:tag="CP"
+                    android:text="@string/edit"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/coverPicture"
+                    app:layout_constraintEnd_toEndOf="@+id/coverPicture" />
+
+                <ImageView
+                    android:id="@+id/profilePicture"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_width="200dp"
+                    android:layout_height="170dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="80dp"
+                    android:contentDescription="@string/profile_picture"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/coverPicture"
+                    app:srcCompat="@drawable/ppdefault" />
+
+                <TextView
+                    android:id="@+id/userNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="147dp"
+                    android:layout_marginStart="147dp"
+                    android:padding="10dp"
+                    android:text="@string/ahmed_ortega"
+                    android:textColor="@android:color/black"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/email_username_gmail_com" />
+
+                <TextView
+                    android:id="@+id/mobileTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="@string/mobile_number_01xxxxxxxxx" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bioTextViewID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/enter_your_bio_here" />
+
+            <Button
+                android:id="@+id/bioButtonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="290dp"
+                android:onClick="editBioInformation"
+                android:text="@string/edit"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:defaultFocusHighlightEnabled="false"
+                android:focusedByDefault="false"
+                android:hint="@string/what_s_on_your_mind_ahmed"
+                android:inputType="text"
+                android:textColorHint="@android:color/black" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/postButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="290dp"
+                android:text="@string/post"
+                android:textAllCaps="false" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/userPostsRecyclerViewID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

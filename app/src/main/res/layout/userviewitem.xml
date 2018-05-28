@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="3"
+        android:id="@+id/userItemName"
+        android:text="Ahmad Mostafa"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:id="@+id/userItemImage"
+        android:layout_toRightOf="@id/userItemName"
+        android:src="@drawable/ic_launcher_background"/>
+
+</LinearLayout>

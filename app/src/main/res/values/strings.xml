@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Horus</string>
+
+    <string name="self_destruct">Get</string>
+    <string name="Name">Ahmed Abdelrahman</string>
+    <string name="Post_Content">This is a great event. You have to attend it. Purchase your ticket as soon as possible. Enjoy !</string>
+
+    <string name="edit">Edit</string>
+    <string name="ahmed_ortega"> </string>
+    <string name="what_s_on_your_mind_ahmed">What\'s on your mind?</string>
+    <string name="cover_picture">Cover Picture</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="post">Post</string>
+    <string name="email_username_gmail_com">Email: </string>
+    <string name="mobile_number_01xxxxxxxxx">Mobile Number: </string>
+    <string name="enter_your_bio_here">Enter your bio here.</string>
+    <string name="username">USERNAME</string>
+    <string name="enter_your_new_bio_here">Enter your new bio here.</string>
+    <string name="bio">Bio</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_new_number_here">Enter your new number here.</string>
+    <string name="email">Email</string>
+    <string name="enter_your_new_name_here">Enter your new name here.</string>
+    <string name="number">Number</string>
+    <string name="enter_your_new_email_here">Enter your new email here.</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">UnFollow</string>
+
+</resources>
